@@ -5,6 +5,11 @@ import Chair from "../assets/Configurator/main.png";
 import Configure from "../assets/Configurator/CONFIGUREICON.png";
 import upload from "../assets/Configurator/UPLOADICON_3.png";
 import publish from "../assets/Configurator/PUBLISHICON.png";
+import chair2 from "../assets/Configurator/chair.gif";
+import image2 from '../assets/Configurator/image2.gif';
+import image3 from '../assets/Configurator/image3.gif';
+import monitor from '../assets/monitor.svg';
+import temp2 from '../assets/3DStudio/temp2.png'
 
 function Congigurator() {
   const navigate = useNavigate();
@@ -51,41 +56,67 @@ function Congigurator() {
         </div>
       </div>
       <div className="configurator-detail">
-        <div>
-          <img />
+        <div className="detailss">
+          <img src={chair2} />
           <div>
-            <h2></h2>
-            <p></p>
+            <span>Multiple variations for single product</span>
+            <p>
+              Offer endless choices with multiple variations for your product.
+              Cater to diverse customer preferences and increase customer
+              satisfaction by providing a wide range of customizable options.
+            </p>
           </div>
         </div>
-        <div>
+        <div className="detailss">
           <div>
-            <h2></h2>
-            <p></p>
+            <span>Animated 3D Content</span>
+            <p>
+              Engage your audience with hassle-free animated 3D content, a
+              dynamic alternative to traditional explainer videos. Convey your
+              message effectively with captivating visuals that leave a lasting
+              impact.
+            </p>
           </div>
-          <img />
+          <img src={image2}/>
         </div>
-        <div>
-          <img />
+        <div className="detailss">
+          <img  src={image3}/>
           <div>
-            <h2></h2>
-            <p></p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h2></h2>
-            <p></p>
-          </div>
-          <img />
-        </div>
-        <div>
-          <img />
-          <div>
-            <h2></h2>
-            <p></p>
+            <span>Image mode</span>
+            <p>
+              Experience the ultimate all-in-one image mode. Immerse yourself in
+              stunning visuals with enhanced details and vibrant colors, all in
+              a single, comprehensive viewing experience.
+            </p>
           </div>
         </div>
+        <div className="detailss">
+          <div>
+            <span>Streamlined Project Management</span>
+            <p>
+              No matter the size of your project, we possess the expertise to
+              fulfill your requirements. Our platform seamlessly handles
+              projects, allowing you to store files, make edits at any time, and
+              publish whenever you choose.
+            </p>
+          </div>
+          <img src={temp2}/>
+        </div>
+        <div className="detailss">
+          <img src={monitor}/>
+          <div>
+            <span>No code, No App All through your Browser</span>
+            <p>
+              Unlock limitless possibilities without the need for code or an
+              app. Access and control everything through your browser,
+              simplifying the process and empowering you to create and customize
+              with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="contact-us">
+        <span>Contact us form</span>
       </div>
     </div>
   );
