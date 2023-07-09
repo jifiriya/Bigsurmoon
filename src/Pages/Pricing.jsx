@@ -3,6 +3,8 @@ import CustomSlider from "../components/common/reusable/CustomSlider";
 import Button from "../components/common/reusable/Button";
 import Tick from "../assets/icons/Tick";
 
+
+
 function Pricing() {
   const [value, setValue] = useState(50);
 
