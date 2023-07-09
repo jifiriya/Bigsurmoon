@@ -8,11 +8,11 @@ body {
   min-width: 1440px;
   height: auto;
   min-height: 100vh;
-  margin: 0 auto;
-  background-size: 100% auto;
   
   
-  
+}
+html{
+  overflow-x: hidden;
 }
 
 #root {
@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  max-width: 100%;
+  min-width: 100%;
   img {
     height: 300px;
     margin-top: -100px;
@@ -32,10 +32,8 @@ body {
 
  
   display: flex;
-  
   background-color: black;
   height: 100px;
-
   .navlink {
     margin-top: 40px;
     margin-left: 200px;
@@ -124,13 +122,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
+  align-items: center;
+  position: relative;
 
   .home-top {
-    max-width: 100%;
+    min-width: 100%;
     height: 1000px;
-    padding-top: 20px;
-    // padding-left: 300px;
+    padding-top: 20px 0;
+    
     .home-heading {
       p {
         text-align: center;
@@ -162,7 +162,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    max-width: 100vw;
+    width: 100%;
   }
   .product-positives {
     .headings {
@@ -179,7 +179,7 @@ body {
   }
   .see-it-in-action {
     height: 993px;
-    width: 100vw;
+    width: 100%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@ body {
       text-align: justify;
       div {
         margin: 80px;
-        width: 530px;
+        max-width: 530px;
         height: 255px;
 
         h2 {
@@ -233,7 +233,7 @@ body {
     display: flex;
     justify-content: center;
     .feature-heading {
-      width: 598px;
+      max-width: 598px;
       height: 125px;
       display: flex;
       flex-direction: column;
@@ -296,6 +296,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
 
   .studio-main {
     display: flex;
