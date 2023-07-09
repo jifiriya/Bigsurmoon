@@ -3,7 +3,7 @@ import Logo from "../../assets/home/Logo White.svg";
 import Button from "./reusable/Button";
 import Vector from "../../assets/Vector.png";
 import { Link } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();

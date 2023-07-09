@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/home/Logo White.svg";
+import UpButton from "./reusable/UpButton";
 
 function Footer() {
   return (
@@ -17,8 +18,8 @@ function Footer() {
           <p>support@bigsurmoon.com</p>
         </div>
       </div>
-      <div>
-        <div className="navlinks">
+      <div className="footer-link">
+        <div className="footer-navlinks">
           <div>
             <ul>
               <li>
@@ -59,7 +60,9 @@ function Footer() {
         </div>
         <div>© 2023 Bigsurmoon pvt ltd. all rights reserved.</div>
       </div>
-      <div>upbutton</div>
+      <div>
+        <UpButton />
+      </div>
     </div>
   );
 }

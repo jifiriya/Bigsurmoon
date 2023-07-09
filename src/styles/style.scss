@@ -136,16 +136,25 @@ html {
   font-size: 15px;
   background-color: #0a142f;
   color: $whiteText;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  line-height: 1.5;
   img {
     width: auto;
     height: 300px;
   }
   .contact-details {
   }
-  .navlinks {
+  .footer-link {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-navlinks {
+    display: flex;
+    gap: 100px;
   }
 
   ul {
@@ -1060,4 +1069,15 @@ input:focus ~ .bar:after {
 .blue-text {
   color: #07bdff;
   // font-weight: bold;
+}
+
+// 
+
+.up-button{
+  align-self: center;
+  background-color: inherit;
+  border: none;
+ 
+ 
+  
 }
