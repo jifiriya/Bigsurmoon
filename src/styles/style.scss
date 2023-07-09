@@ -544,6 +544,57 @@ body {
       background-color: white;
       border-radius: 10px;
       margin-left: -10px;
+      color: #000000;
+      // justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      div{
+        margin-top: 30px;
+      }
+
+      .price {
+        display: flex;
+        gap: 10px;
+
+        span {
+          font-size: 64px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: #636363;
+          padding-top: 25px;
+        }
+      }
+      .line-heading {
+        // text-align: center;
+        display: flex;
+        gap: 10px;
+        color: #5c5c5c;
+        font-size: 18px;
+        font-weight: 400;
+
+        .line {
+          border-top: 2px solid #6d4d4d;
+        }
+      }
+      .details {
+        div {
+          display: flex;
+          gap: 10px;
+          font-size: 14px;
+          font-weight: 400;
+          margin: 5px;
+          
+        }
+        
+      }
+      .button{
+        margin-top: 50px;
+      }
     }
   }
 }
@@ -603,38 +654,34 @@ body {
 
 // 3D-CONFIGURATOR
 
-.configurator{
+.configurator {
   min-width: 100vw;
   min-height: 100vh;
   background-color: #070911;
   color: white;
-  .congigurator-main{
+  .congigurator-main {
     margin-left: 10%;
     display: flex;
-    
-      .main-content{
-        h2{
-          font-size: 92px;
-          font-weight: 600;
-        }
-        p{
-          font-size: 24px;
-          margin-top: -50px;
-          
-        }
-        div{
-          display: flex;
-          gap: 30px;
-        }
-      }
-      img{
-        margin-top: 150px;
-        margin-left: -100px;
-      }
 
-
+    .main-content {
+      h2 {
+        font-size: 92px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 24px;
+        margin-top: -50px;
+      }
+      div {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    img {
+      margin-top: 150px;
+      margin-left: -100px;
+    }
   }
-
 }
 
 // Login Page /signUp
@@ -655,21 +702,21 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
-    
+
     h2 {
       font-size: 40px;
       font-weight: bolder;
     }
-    Button{
+    Button {
       margin-left: 33%;
     }
-    .signup-link{
+    .signup-link {
       color: #bebebe;
       padding-top: 30px;
       gap: 10px;
-      .link{
+      .link {
         text-decoration: none;
-        color: rgb(255, 255, 255)
+        color: rgb(255, 255, 255);
       }
     }
   }
@@ -681,64 +728,60 @@ body {
   }
 }
 
-
-// 
+//
 
 // Login form style
 
-.group        { 
-  position:relative; 
-  margin-bottom:45px; 
+.group {
+  position: relative;
+  margin-bottom: 45px;
   display: flex;
 }
-input         {
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:500px;
-  border:none;
-  border-bottom:1px solid #ffffff;
-  background-color:  #1e1e1e;
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: #1e1e1e;
   color: white;
 }
-input:focus     { outline:none; }
+input:focus {
+  outline: none;
+}
 
 /* LABEL ======================================= */
-label          {
-  color:#ffffff; 
-  font-size:20px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+label {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label {
-  top:-20px;
-  font-size:14px;
-  color:#ffffff;
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #ffffff;
 }
-
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:100%;
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 100%;
 }
 
-
-.password-toggle-icon{
+.password-toggle-icon {
   margin-left: -50px;
 }
-
-
-
-
-
 
 // Custom slider
 
@@ -792,7 +835,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     margin-top: -10px;
     padding-left: 15px;
     padding-right: 30px;
-    // padding: -30px 20px 20px 20px;
   }
 
   .thumb-wrp {
@@ -810,8 +852,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     position: absolute;
     height: 0;
     width: 70%;
-    margin-left: -40%;
+    margin-left: 9%;
     outline: none;
+    margin-top: -8px;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid #040d42;
   }
 
   .thumb--right {

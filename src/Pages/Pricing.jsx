@@ -1,14 +1,15 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import CustomSlider from "../components/common/reusable/CustomSlider";
+import Button from "../components/common/reusable/Button";
+import Tick from "../assets/icons/Tick";
 
 function Pricing() {
-  const [value,setValue]=useState(50)
+  const [value, setValue] = useState(50);
 
-  const handleChange=({max})=>{
-    setValue(max)
+  const handleChange = ({ max }) => {
+    setValue(max);
+  };
 
-  }
-  
   return (
     <div className="pricing">
       <div className="heading">
@@ -32,7 +33,43 @@ function Pricing() {
           />
           <p>If you have more than 500 files, get in touch.</p>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="price">
+            <span>$75</span>
+            <p>per month</p>
+          </div>
+          <div className="line-heading">
+            <div className="line"></div>
+            <div>All Plans Include</div>
+            <div className="line"></div>
+          </div>
+
+          <div className="details">
+            <div>
+              <div>
+                <Tick className="tick" />
+                3D Asset Management
+              </div>
+              <div>
+                <Tick />
+                Product variant support
+              </div>
+            </div>
+            <div>
+              <div>
+                <Tick />
+                QR code access to AR
+              </div>
+              <div>
+                <Tick />
+                Unlimited Animations
+              </div>
+            </div>
+          </div>
+          <Button className='button'>Start My Free Trial</Button>
+        </div>
+
+        
       </div>
     </div>
   );
