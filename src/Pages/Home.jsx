@@ -13,8 +13,10 @@ import cart from "../assets/home/Features/cart.svg";
 import animated from "../assets/home/Features/animated3D.svg";
 import catlog from "../assets/home/Features/3Dcatlog.svg";
 import Vector from '../assets/Vector.png'
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate=useNavigate()
   return (
     <div className="home">
       <div className="home-top">
@@ -33,7 +35,7 @@ function Home() {
           </p>
         </div>
         <div className="home-button">
-          <Button>Book a Demo</Button>
+          <Button onClick={()=>navigate('/about-ar')}>Book a Demo</Button>
           <Button>Start Trial</Button>
         </div>
       </div>
