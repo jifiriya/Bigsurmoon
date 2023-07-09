@@ -1,6 +1,6 @@
 import React from "react";
 import Switch from "../assets/home/AR Capsule.svg";
-import Button from '../components/common/reusable/Button'
+import Button from "../components/common/reusable/Button";
 import Section2 from "../assets/home/Section2.png";
 import temp from "../assets/home/temp.png";
 import support from "../assets/home/Features/support.svg";
@@ -12,11 +12,14 @@ import clock from "../assets/home/Features/clock.svg";
 import cart from "../assets/home/Features/cart.svg";
 import animated from "../assets/home/Features/animated3D.svg";
 import catlog from "../assets/home/Features/3Dcatlog.svg";
-import Vector from '../assets/Vector.png'
+import Vector from "../assets/Vector.png";
+import Watch from '../assets/home/Watch.png'
+import Light from '../assets/home/Light.png'
+import monitor from '../assets/monitor.svg';
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="home">
       <div className="home-top">
@@ -35,12 +38,12 @@ function Home() {
           </p>
         </div>
         <div className="home-button">
-          <Button onClick={()=>navigate('/about-ar')}>Book a Demo</Button>
+          <Button onClick={() => navigate("/about-ar")}>Book a Demo</Button>
           <Button>Start Trial</Button>
         </div>
       </div>
       <div className="second-image">
-        <img  src={Section2} />
+        <img src={Section2} />
       </div>
       <div className="product-positives">
         <p className="headings">
@@ -99,12 +102,12 @@ function Home() {
       <div className="see-it-in-action">
         <span>SEE IT IN ACTION!</span>
         <div>
-          <img src={Section2} />
+          <img src={Watch} />
         </div>
       </div>
       <div className="guide">
         <div className="guide-points">
-          <img src={temp} />
+          <img src={Light} />
           <div>
             <h2>3D Modelling Studio</h2>
             <p>
@@ -125,7 +128,7 @@ function Home() {
             </p>
             <a>Explore customisation &gt;</a>
           </div>
-          <img src={temp} />
+          <img src={monitor} />
         </div>
         <div className="guide-points">
           <img src={temp} />
@@ -240,9 +243,10 @@ function Home() {
                 benefits
               </p>
             </div>
-            <Button className='button'>
-            <span>Explore Plans</span> 
-        <img className="vector" src={Vector} /></Button>
+            <Button className="button">
+              <span>Explore Plans</span>
+              <img className="vector" src={Vector} />
+            </Button>
           </div>
         </div>
       </div>

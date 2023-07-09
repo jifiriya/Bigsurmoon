@@ -7,8 +7,11 @@ import temp1 from "../assets/3DStudio/temp1.png";
 import temp2 from "../assets/3DStudio/temp2.png";
 import temp3 from "../assets/3DStudio/temp3.png";
 import Vector from "../assets/Vector.png";
-import temp4 from "../assets/3DStudio/temp4.svg";
-import temp5 from "../assets/3DStudio/temp5.svg";
+import tableLamp from '../assets/3DStudio/tableLamp.svg';
+import Light from '../assets/home/Light.png';
+import writingpad from '../assets/3DStudio/writingpad.png';
+import upload from '../assets/3DStudio/upload.png'
+
 
 function Studio3D() {
   return (
@@ -138,10 +141,10 @@ function Studio3D() {
                 dimensions. That’s it, from your end.
               </p>
             </div>
-            <img src={temp4} />
+            <img src={tableLamp} />
           </div>
           <div className="steps-details">
-            <img src={temp5} />
+            <img src={Light} />
             <div>
               <h2>Step 2: 3D Model Creation</h2>
               <p>
@@ -160,10 +163,10 @@ function Studio3D() {
                 representation.
               </p>
             </div>
-            <img src={temp4} />
+            <img src={writingpad} />
           </div>
           <div className="steps-details">
-            <img src={temp4} />
+            <img src={upload} />
             <div>
               <h2>Step 4: Upload</h2>
               <p>
