@@ -10,6 +10,7 @@ import AboutAR from "../Pages/AboutAR";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import Congigurator from "../Pages/Congigurator";
+import BookADemo from "../Pages/BookADemo";
 
 function RouterList() {
   const modules = [
@@ -18,6 +19,7 @@ function RouterList() {
     { path: "/pricing", element: <Pricing />, title: "Bigsurmoon" },
     { path: "/about-ar", element: <AboutAR />, title: "Bigsurmoon" },
     { path: "/configurator", element: <Congigurator />, title: "Bigsurmoon" },
+    { path: "/book-a-demo", element: <BookADemo />, title: "Bigsurmoon" },
     
 
   ];

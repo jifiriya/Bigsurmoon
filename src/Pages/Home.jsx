@@ -38,7 +38,7 @@ function Home() {
           </p>
         </div>
         <div className="home-button">
-          <Button onClick={() => navigate("/about-ar")}>Book a Demo</Button>
+          <Button onClick={() => navigate("/book-a-demo")}>Book a Demo</Button>
           <Button>Start Trial</Button>
         </div>
       </div>
