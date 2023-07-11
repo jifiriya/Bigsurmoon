@@ -6,8 +6,8 @@ function Eye() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="30"
-        height="25"
+        width="23"
+        height="18"
         fill="white"
       >
         <g id="_01_align_center" data-name="01 align center">

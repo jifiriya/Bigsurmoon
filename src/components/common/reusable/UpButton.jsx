@@ -19,8 +19,8 @@ function UpButton() {
           viewBox="0 0 24 30"
           x="0px"
           y="0px"
-          height="110px"
-          width="110px"
+          height="70px"
+          width="70px"
           fill="#2875FF"
         >
           <title>Arrow-Up-Circle</title>
