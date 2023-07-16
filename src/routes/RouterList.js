@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/common/Header";
+import Header from "../components/common/Header/Header";
 import Footer from "../components/common/Footer";
 import { Route, Routes } from "react-router-dom";
 import TitleWrapper from "./TitleWrapper";
@@ -11,6 +11,8 @@ import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import Congigurator from "../Pages/Congigurator";
 import BookADemo from "../Pages/BookADemo";
+import UserDashBoard from "../Pages/UserDashBoard";
+import AdminDashboard from "../Pages/AdminDashboard";
 
 function RouterList() {
   const modules = [
@@ -30,6 +32,8 @@ function RouterList() {
       <Routes>
         <Route path='/login' element={<Login />} />
         <Route path='/signUp' element={<SignUp />} />
+        <Route path='/user-dashboard' element={<UserDashBoard />} />
+        <Route path='/admin-dashboard' element={<AdminDashboard />} />
         {modules.map(({ title, path, element }) => (
           <Route
             path={path}
