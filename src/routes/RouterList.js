@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/common/Header/Header";
+import PublicHeader from "../components/common/Header/PublicHeader";
 import Footer from "../components/common/Footer";
 import { Route, Routes } from "react-router-dom";
 import TitleWrapper from "./TitleWrapper";
@@ -40,7 +40,7 @@ function RouterList() {
             key={path}
             element={
               <>
-              <Header />
+            <PublicHeader />
             <TitleWrapper title={title}> {element}</TitleWrapper>
             <Footer />
             </>

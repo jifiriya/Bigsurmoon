@@ -21,9 +21,9 @@ function AboutAR() {
             <span className="blue-text">Re-Imagined</span>
           </p>
         </div>
-        <div>
+        
           <img className="chair-main" src={Chair} />
-        </div>
+        
       </div>
       <div className="ar-main">
         <div className="main-heading">

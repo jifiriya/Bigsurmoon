@@ -11,6 +11,7 @@ import tableLamp from '../assets/3DStudio/tableLamp.svg';
 import Light from '../assets/home/Light.png';
 import writingpad from '../assets/3DStudio/writingpad.png';
 import upload from '../assets/3DStudio/upload.png'
+import StudioSlider from "../components/common/reusable/3DStudioSlider";
 
 
 function Studio3D() {
@@ -28,7 +29,7 @@ function Studio3D() {
         </div>
         <img src={sofa} />
       </div>
-      <div className="about-bigsurmoon">
+       <div className="about-bigsurmoon">
         <h2>
           About Bigsurmoon <span className="blue-text">Studio</span>
         </h2>
@@ -80,12 +81,13 @@ function Studio3D() {
             </p>
           </div>
         </div>
+        <StudioSlider />
       </div>
-      <div className="studio-details">
+     <div className="studio-details">
         <div className="detail-component">
-          <div>
+          
             <img src={temp1} />
-          </div>
+          
           <div>
             <h2>Dedicated Support Team</h2>
             <p>
@@ -104,14 +106,14 @@ function Studio3D() {
               projects of all sizes, ensuring quality and timely delivery.
             </p>
           </div>
-          <div>
+          
             <img src={temp2} />
-          </div>
+          
         </div>
         <div className="detail-component">
-          <div>
+          
             <img src={temp3} />
-          </div>
+         
           <div>
             <h2>Streamlined Project Management</h2>
             <p>
@@ -123,7 +125,7 @@ function Studio3D() {
           </div>
         </div>
       </div>
-      <div className="how-it-works">
+       <div className="how-it-works">
         <div className="title">
           <h2>HOW IT WORKS</h2>
           <p>

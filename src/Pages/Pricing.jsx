@@ -47,26 +47,25 @@ function Pricing() {
           </div>
 
           <div className="details">
-            <div>
-              <div>
+            
+              <div className="details-column">
                 <Tick className="tick" />
                 3D Asset Management
               </div>
-              <div>
+              <div className="details-column">
                 <Tick />
                 Product variant support
               </div>
-            </div>
-            <div>
-              <div>
+            
+              <div className="details-column">
                 <Tick />
                 QR code access to AR
               </div>
-              <div>
+              <div className="details-column">
                 <Tick />
                 Unlimited Animations
               </div>
-            </div>
+            
           </div>
           <Button className='button'>Start My Free Trial</Button>
         </div>

@@ -10,6 +10,8 @@ import image2 from '../assets/Configurator/image2.gif';
 import image3 from '../assets/Configurator/image3.gif';
 import monitor from '../assets/monitor.svg';
 import temp2 from '../assets/3DStudio/temp2.png'
+import Globe from '../assets/Configurator/Globe.png'
+import Presentation from '../assets/Configurator/Presentation.png'
 
 function Congigurator() {
   const navigate = useNavigate();
@@ -31,11 +33,11 @@ function Congigurator() {
             <Button onClick={() => navigate("/login")}>Learn More</Button>
           </div>
         </div>
-        <div>
+        
           <img src={Chair} />
-        </div>
+        
       </div>
-      <div className="upload">
+       <div className="upload">
         <div>
           <img src={upload} />
           <h2 className="upload blue-text">1.Upload</h2>
@@ -100,10 +102,10 @@ function Congigurator() {
               publish whenever you choose.
             </p>
           </div>
-          <img src={temp2}/>
+          <img src={Presentation}/>
         </div>
         <div className="detailss">
-          <img src={monitor}/>
+          <img src={Globe}/>
           <div>
             <span>No code, No App All through your Browser</span>
             <p>
@@ -117,7 +119,7 @@ function Congigurator() {
       </div>
       <div className="contact-us">
         <span>Contact us form</span>
-      </div>
+      </div> 
     </div>
   );
 }
