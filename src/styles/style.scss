@@ -76,11 +76,17 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  // justify-content: space-between;
   background-color: black;
+
+
+  
+
   height: 70px;
   color: #292929;
   img {
+   float: left;
     max-height: 200px;
     max-width: 300px;
     max-width: 100%;
@@ -90,7 +96,7 @@ body {
   }
 
   .navlink {
-    margin-left: 80px;
+    // margin-left: 80px;
     display: flex;
 
     a,
@@ -98,7 +104,7 @@ body {
       margin-right: 40px;
       font-size: 16px;
       text-decoration: none;
-      color: #ffffff;
+      color: #676363;
     }
   }
   @media screen and (max-width: 789px) {
@@ -155,7 +161,7 @@ body {
   }
 
   .login-btn {
-    // margin-left: 100px;
+    
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -175,53 +181,8 @@ body {
 }
 
 // sidenav
-.sidenav {
-  background-color: black;
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  row-gap: 15px;
-  padding: 20px;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 200px;
-  height: calc(100vh - 70px);
 
-  a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    // margin-bottom: 16px;
-  }
 
-  .progress {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    row-gap: 5px;
-    margin-bottom: 16px;
-  }
-  .view-plans {
-    background-color: rgb(41, 39, 39);
-    border-radius: 10px;
-    text-align: center;
-    font-size: 12px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
-    color: white;
-
-    .view-plans-button {
-      font-size: 12px;
-      height: 30px;
-      width: 20px;
-    }
-  }
-}
 
 // button
 

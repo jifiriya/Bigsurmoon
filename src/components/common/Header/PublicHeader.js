@@ -35,7 +35,6 @@ function Header() {
         </div>
       <img onClick={() => navigate("/")} src={Logo} />
       <div className="navlink">
-        <Link to="/"> Home</Link>
         <div className="dropdown">
           <a>About</a>
           <div class="dropdown-content">
