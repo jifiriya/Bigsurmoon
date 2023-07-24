@@ -23,7 +23,7 @@ function FeaturesSlider() {
     arrows:false
   };
   return (
-    <div style={{ width:"250px" }} className="feature-slider">
+    <div style={{ width:"280px" }} className="feature-slider">
       <Slider {...Settings}>
         <div className="slider-component">
           <img src={settings} />
