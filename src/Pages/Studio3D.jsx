@@ -140,7 +140,7 @@ function Studio3D() {
               <h2>Step 1: Provide Reference Materials</h2>
               <p>
                 Provide us with product images, color variations and Product
-                dimensions. That’s it, from your end.
+                dimensions. That’s it,  from your end.
               </p>
             </div>
             <img src={tableLamp} />
