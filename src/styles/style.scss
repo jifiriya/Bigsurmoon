@@ -1204,7 +1204,8 @@ body {
       padding-top: 50px;
       h2 {
         font-size: 62px;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: "Outfit";
       }
       p {
         font-size: 18px;
@@ -1229,6 +1230,7 @@ body {
       .main-content {
         h2 {
           font-size: 45px;
+          font-weight:500px
         }
         p {
           font-size: 15px;
@@ -1365,6 +1367,7 @@ body {
 // Login Page /signUp
 
 .login {
+  
   background-color: #1e1e1e;
   width: 100%;
   min-height: 100vh;
@@ -1373,6 +1376,12 @@ body {
   align-items: center;
   color: white;
   gap: 200px;
+  @media screen and (max-width: 1200px) {
+
+    background-image: url("../assets/Login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .form {
     width: 421px;
@@ -1380,7 +1389,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background: inherit;
+    
     h2 {
       font-size: 30px;
       font-weight: bolder;
@@ -1433,9 +1443,15 @@ select {
   display: block;
   width: 350px;
   border: none;
+  background: inherit;
   border-bottom: 1px solid #ffffff;
-  background-color: #1e1e1e;
+  // background-color: #1e1e1e;
   color: white;
+  @media screen and (max-width: 1200px) {
+      width: 280px;
+    
+  }
+
 }
 input:focus,
 select:focus {
