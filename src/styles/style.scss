@@ -82,7 +82,7 @@ body {
   height: 70px;
   color: #292929;
   img {
-   float: left;
+    float: left;
     max-height: 200px;
     max-width: 300px;
     max-width: 100%;
@@ -157,7 +157,6 @@ body {
   }
 
   .login-btn {
-    
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -168,21 +167,19 @@ body {
       margin-top: 0px;
     }
     @media screen and (max-width: 789px) {
-        height: 20px;
-        width: 80px;
-        span{
-          font-size: 10px;
-        }
-        img{
-          height: 8px;
-        }
+      height: 20px;
+      width: 80px;
+      span {
+        font-size: 10px;
+      }
+      img {
+        height: 8px;
+      }
     }
   }
 }
 
 // sidenav
-
-
 
 // button
 
@@ -221,7 +218,7 @@ body {
   align-items: center;
   gap: 100px;
   line-height: 1.5;
-  
+
   @media screen and (max-width: 788px) {
     gap: 00px;
     font-size: 8px;
@@ -264,55 +261,94 @@ body {
   background-color: #000000;
   background-image: url("../assets/home/BG.png");
   background-repeat: no-repeat;
+  // background-position: c;
+  background-size: contain;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   align-items: center;
   position: relative;
- 
 
   .home-top {
     min-width: 100%;
-    padding-top: -80px;
+    // padding-top: -80px;
     font-family: "Roboto";
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    max-height: 100vh;
+    flex-wrap: wrap;
    
 
     .home-heading {
-     
-      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
       p {
-        
         text-align: center;
         color: #ffffff;
-        font-size: 90px;
-        font-weight: bold;
-        line-height: 0.9;
-        
+        font-size: 100px;
+        font-weight: 600;
+        line-height: 1;
+
         img {
-          margin-bottom: -30px;
-          font-size: 62px;
+          margin-bottom: -50px;
+          height: 140px;
+          font-size: 55px;
+          font-weight: 600;
         }
       }
-      @media screen and (max-width: 768px) {
+
+      @media screen and (max-width: 1366px) {
         p {
-          font-size: 55px;
-          line-height: 1.4;
-          padding: 10px;
+          font-size: 90px;
           font-weight: 600;
-          letter-spacing: 0.05cm;
+
+          img {
+            height: 120px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: -35px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        p {
+          font-size: 80px;
+          font-weight: 600;
+          img {
+            height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: -30px;
+          }
+        }
+      }
+
+     
+      @media screen and (max-width: 767px) {
+        // height: 200px;
+        
+        p {
+          
+          max-width: 400px;
+          font-size: 50px;
+          line-height: 1.5;
+          margin: 40px;
+          font-weight: 600;
+          letter-spacing: 0.01cm;
+
+          img {
+            height: 70px;
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: -20px;
+          }
         }
         p br {
           display: none;
-        }
-        img {
-          // width: 150px;
-          height: 90px;
-          font-size: 45;
-          font-weight: bold;
-          
-          
         }
       }
     }
@@ -350,9 +386,10 @@ body {
     justify-content: center;
     align-content: center;
     width: 100%;
+    max-height: 100vh;
     img {
-      max-width: 90%;
-      height: auto;
+      max-width: 60%;
+      // height: auto;
     }
   }
   .product-positives {
@@ -360,10 +397,19 @@ body {
     margin-bottom: 50px;
     width: 100%;
     font-family: "Outfit";
+    letter-spacing: 0.01cm;
+    flex-direction: column;
+    // min-height: 100vh;
+    @media screen and (max-width: 768px) {
+      height: 70vh;
+    }
     .headings {
-      font-size: 75px;
+      font-size: 80px;
       text-align: center;
-      
+      @media screen and (max-width: 1290px) {
+        font-size: 60px;
+      }
+
       @media screen and (max-width: 768px) {
         font-size: 30px;
       }
@@ -375,17 +421,44 @@ body {
       display: flex;
       justify-content: center;
       text-align: center;
-      font-size: 25px;
       flex-wrap: wrap;
-      
 
       .column {
         flex: 25%;
+
+        p {
+          .blue-text {
+            font-size: 50px;
+          }
+          font-size: 40px;
+          font-weight: bold;
+        }
       }
+      @media screen and (max-width: 1290px) {
+        font-size: 18px;
+        .column {
+          flex: 25%;
+          p {
+            .blue-text {
+              font-size: 40px;
+            }
+            font-size: 35px;
+            font-weight: bold;
+          }
+        }
+      }
+
       @media screen and (max-width: 768px) {
         font-size: 18px;
         .column {
           flex: 50%;
+          p {
+            .blue-text {
+              font-size: 18px;
+            }
+            font-size: 15px;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -400,22 +473,23 @@ body {
     justify-content: center;
     text-align: center;
     font-family: "Outfit";
-    @media screen and (max-width: 768px) {
-      height: 100%;
-      padding-bottom: 50px;
-      span{
-        padding-top: 0px;
-      }
-    }
-
     span {
       color: #000000;
       margin-top: 50px;
       margin-bottom: 50px;
-      font-weight: bold;
-      font-size: 20px;
+      font-weight: 1000;
+      font-size: 25px;
       letter-spacing: 10px;
     }
+    @media screen and (max-width: 768px) {
+      height: 100%;
+      padding-bottom: 50px;
+      span {
+        font-size: 20px;
+        padding-top: 0px;
+      }
+    }
+
     img {
       max-width: 600px;
 
@@ -431,6 +505,8 @@ body {
     background-color: #0b0e1b;
     padding-bottom: 100px;
     width: 100%;
+    line-height: 1.4;
+      letter-spacing: 0.01cm;
 
     .guide-points {
       flex-wrap: wrap;
@@ -442,7 +518,7 @@ body {
       gap: 200px;
       padding-top: 100px;
       div {
-        max-width: 430px;
+        max-width: 400px;
         height: 150px;
 
         h2 {
@@ -462,10 +538,16 @@ body {
         }
       }
       img {
-        height: 200px;
+        height: 180px;
       }
-      @media screen and (max-width: 1050px) {
+      @media screen and (max-width: 989px) {
+        gap: 50px;
+      }
+      @media screen and (max-width: 767px) {
         flex-direction: column;
+        line-height: 1.4;
+        letter-spacing: 0.01cm;
+        
         gap: 0;
         div h2 {
           font-size: 25px;
@@ -476,6 +558,7 @@ body {
 
         img {
           order: -1;
+          height: 210px;
         }
       }
     }
@@ -487,6 +570,8 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    line-height: 1.4;
+      letter-spacing: 0.01cm;
     .feature-heading {
       max-width: 498px;
       height: 125px;
@@ -494,43 +579,53 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 30px;
       * {
         margin: 30px;
       }
 
       h2 {
-        font-size: 35px;
-        font-family: bold;
+        font-size: 45px;
+        font-weight: bold;
+        font-family:"Outfit";
       }
       p {
-        font-size: 19px;
+        font-size: 20px;
         margin-top: -20px;
         text-align: center;
+        font-family:"Roboto";
       }
 
       @media screen and (max-width: 768px) {
+        line-height: 1.4;
+        letter-spacing: 0.01cm;
+        margin: 0;
+        margin-bottom: 20px;
         h2 {
-          font-size: 25px;
+          font-size: 35px;
         }
         p {
-          font-size: 13px;
+          font-size: 14px;
         }
       }
     }
     .feature-components {
       display: flex;
       flex-wrap: wrap;
-
+      font-family: "Outfit";
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 50px;
       padding-bottom: 40px;
+      @media screen and (max-width: 1280px) {
+        gap: 60px;
+      }
 
       div {
         align-items: center;
         text-align: center;
         flex-basis: calc((100% - 2 * 40px) / 4);
-        width: 200px;
+        width: 300px;
         height: 150px;
         padding: 30px;
         h2 {
@@ -542,7 +637,7 @@ body {
       }
     }
     img {
-      height: 50px;
+      height: 95px;
     }
 
     .feature-slider {
@@ -550,6 +645,8 @@ body {
     }
 
     @media screen and (max-width: 768px) {
+      line-height: 1.4;
+      letter-spacing: 0.01cm;
       .feature-components {
         display: none;
       }
@@ -565,11 +662,12 @@ body {
         align-content: center;
         text-align: center;
         justify-content: center;
+        font-family: "Outfit";
         h2 {
-          font-size: 15px;
+          font-size: 18px;
         }
         p {
-          font-size: 12px;
+          font-size: 15px;
         }
         img {
           display: inherit;
@@ -613,11 +711,11 @@ body {
         font-size: 54px;
         font-weight: bold;
         @media screen and (max-width: 1150px) {
-          font-size: 40px;  font-weight: bold;
+          font-size: 40px;
+          font-weight: bold;
         }
         @media screen and (max-width: 1150px) {
           font-size: 30px;
-          
         }
       }
       img {
@@ -625,9 +723,8 @@ body {
         height: 61px;
         @media screen and (max-width: 1150px) {
           max-width: 38px;
-        height: 41px;
+          height: 41px;
         }
-        
       }
       button {
         margin: 30px;
@@ -639,13 +736,11 @@ body {
     height: 388px;
     @media screen and (max-width: 1150px) {
       width: 289px;
-    height: 288px;
-    @media screen and (max-width: 770px) {
-      order:-1
+      height: 288px;
+      @media screen and (max-width: 770px) {
+        order: -1;
+      }
     }
-
-    }
-    
   }
   .about-bigsurmoon {
     align-self: center;
@@ -691,27 +786,23 @@ body {
         margin-bottom: 50px;
       }
     }
-    
-      
-    
+
     .components {
       display: flex;
       gap: 50px;
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
-     
 
       @media screen and (max-width: 1150px) {
         flex-grow: 1;
         flex: 50%;
-        div{
+        div {
           margin-left: 100px;
           margin-right: 100px;
           margin-bottom: 50px;
         }
       }
-      
 
       div {
         width: 250px;
@@ -733,42 +824,37 @@ body {
         }
       }
     }
-    .studio-slider{
+    .studio-slider {
       display: none;
     }
     @media screen and (max-width: 1000px) {
-      .components{
+      .components {
         display: none;
       }
-      .studio-slider{
+      .studio-slider {
         display: block;
-       
+
         div {
           justify-content: center;
           align-items: center;
-         
-            background-color: #292929;
-            border-radius: 10%;
-            text-align: center;
-            
-          }
-          h2 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 16px;
-            padding: 20px;
-          }
-          img{
-            
-            height: 150px;
-            padding-top: -200px;
-            
-          }
-        
+
+          background-color: #292929;
+          border-radius: 10%;
+          text-align: center;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+          padding: 20px;
+        }
+        img {
+          height: 150px;
+          padding-top: -200px;
+        }
       }
     }
-
   }
   .studio-details {
     background-color: #070911;
@@ -777,7 +863,6 @@ body {
     justify-content: center;
     gap: 50px;
     padding-bottom: 200px;
-
 
     img {
       width: 400px;
@@ -798,14 +883,13 @@ body {
       gap: 100px;
       @media screen and (max-width: 788px) {
         flex-direction: column;
-        img{
-          order:-1;
+        img {
+          order: -1;
           width: 200px;
         }
-        div{
+        div {
           margin: 20px;
         }
-        
       }
 
       div {
@@ -829,9 +913,7 @@ body {
       @media screen and (max-width: 788px) {
         padding-bottom: 50px;
       }
-       
-    
-      
+
       h2 {
         font-size: 25px;
         font-weight: bold;
@@ -839,11 +921,9 @@ body {
       }
       p {
         font-size: 18px;
-        
       }
     }
     .steps {
-      
       .steps-details {
         display: flex;
         justify-content: center;
@@ -852,12 +932,12 @@ body {
         @media screen and (max-width: 788px) {
           margin: 20px;
           flex-direction: column;
-          gap:0px;
+          gap: 0px;
           padding-top: 20px;
           align-items: center;
-          
-          img{
-            order:-1
+
+          img {
+            order: -1;
           }
         }
         div {
@@ -903,7 +983,7 @@ body {
     @media screen and (max-width: 788px) {
       align-items: start;
       flex-direction: column;
-      gap:0px;
+      gap: 0px;
       padding: 20px;
     }
 
@@ -935,7 +1015,6 @@ body {
       height: 10px;
       padding-bottom: 10px;
       margin-top: 10px;
-
     }
   }
 }
@@ -1087,7 +1166,6 @@ body {
 
 .about-ar {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   color: white;
@@ -1096,21 +1174,33 @@ body {
   align-items: center;
   align-content: center;
   width: 100%;
-  // overflow: hidden;
   .ar-top {
     display: flex;
     gap: 100px;
     margin-top: 30px;
     font-family: "Outfit";
     .about-ar-main {
-      font-size: 54px;
+      font-size: 94px;
       font-weight: 500;
-      img{
+      img {
         width: 60px;
       }
     }
     .chair-main {
-      max-width: 402px;
+      max-width: 602px;
+    }
+    @media screen and (max-width: 1280px) {
+      .about-ar-main {
+        font-size: 54px;
+        font-weight: 500;
+        img {
+          width: 60px;
+        }
+       
+      }
+      .chair-main {
+        max-width: 402px;
+      }
     }
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -1140,12 +1230,16 @@ body {
       text-align: center;
       max-width: 752px;
       max-height: 142px;
-      font-size: 40px;
+      font-size: 50px;
       font-weight: bold;
       margin-bottom: 10%;
-      line-height: 1;
+      line-height: 1.5;
+
+      @media screen and (max-width: 1280px) {
+        font-size: 40px;
+      }
       @media screen and (max-width: 768px) {
-        margin: 20px;
+       
         font-size: 20px;
         line-height: 1.5;
       }
@@ -1162,7 +1256,6 @@ body {
         background-size: cover;
         display: flex;
         background-position: center;
-       
 
         span {
           display: inline-block;
@@ -1230,7 +1323,7 @@ body {
       .main-content {
         h2 {
           font-size: 45px;
-          font-weight:500px
+          font-weight: 500px;
         }
         p {
           font-size: 15px;
@@ -1337,7 +1430,6 @@ body {
           @media screen and (max-width: 868px) {
             font-size: 20px;
           }
-
         }
         p {
           font-size: 16px;
@@ -1353,7 +1445,6 @@ body {
           width: 350px;
           order: -1;
         }
-
       }
     }
   }
@@ -1367,7 +1458,6 @@ body {
 // Login Page /signUp
 
 .login {
-  
   background-color: #1e1e1e;
   width: 100%;
   min-height: 100vh;
@@ -1377,7 +1467,6 @@ body {
   color: white;
   gap: 200px;
   @media screen and (max-width: 1200px) {
-
     background-image: url("../assets/Login.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1390,7 +1479,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: inherit;
-    
+
     h2 {
       font-size: 30px;
       font-weight: bolder;
@@ -1448,10 +1537,8 @@ select {
   // background-color: #1e1e1e;
   color: white;
   @media screen and (max-width: 1200px) {
-      width: 280px;
-    
+    width: 280px;
   }
-
 }
 input:focus,
 select:focus {
@@ -1750,10 +1837,16 @@ select:focus ~ .bar:after {
 .features-footer {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   margin-bottom: 50px;
+  line-height: 1.4;
+  letter-spacing: 0.01cm;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    margin-top: 0px;
+    line-height: 1.4;
+    
   }
 
   div {
@@ -1763,11 +1856,12 @@ select:focus ~ .bar:after {
     // padding-left: 100px;
 
     h2 {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bold;
+      font-family: "Outfit";
     }
     p {
-      font-size: 15px;
+      font-size: 12px;
     }
   }
   .button {
@@ -1782,7 +1876,11 @@ select:focus ~ .bar:after {
 
     @media screen and (max-width: 768px) {
       margin: 0;
-      width: 200px;
+      width: 150px;
+      font-size: 10px;
+      .vector{
+        display: none;
+      }
       // margin-left: 500px;
     }
   }

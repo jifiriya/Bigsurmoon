@@ -18,6 +18,7 @@ import Light from "../assets/home/Light.png";
 import monitor from "../assets/monitor.svg";
 import { useNavigate } from "react-router-dom";
 import FeaturesSlider from "../components/common/reusable/FeaturesSlider";
+import temp5 from '../assets/home/temp5.png'
 
 function Home() {
   const navigate = useNavigate();
@@ -142,7 +143,7 @@ function Home() {
         </div>
 
         <div className="guide-points">
-          <img src={temp} />
+          <img src={temp5} />
           <div>
             <h2>Release your Product</h2>
             <p>

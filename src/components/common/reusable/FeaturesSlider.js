@@ -14,7 +14,7 @@ import catlog from "../../../assets/home/Features/3Dcatlog.svg";
 
 function FeaturesSlider() {
   const Settings = {
-    // dots: true,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -23,7 +23,7 @@ function FeaturesSlider() {
     arrows:false
   };
   return (
-    <div style={{ width:"280px" }} className="feature-slider">
+    <div style={{ width:"250px" }} className="feature-slider">
       <Slider {...Settings}>
         <div className="slider-component">
           <img src={settings} />
