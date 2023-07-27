@@ -10,7 +10,7 @@ function UpButton() {
     });
   }
   return (
-    <div>
+    
       <button
         onClick={handleClick} className="up-button"
       >
@@ -27,7 +27,7 @@ function UpButton() {
           <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.71,9.71a1,1,0,0,1-1.41,0L13,10.41V16a1,1,0,0,1-2,0V10.41L9.71,11.71a1,1,0,0,1-1.41-1.41l3-3a1,1,0,0,1,1.41,0l3,3A1,1,0,0,1,15.71,11.71Z" />
         </svg>
       </button>
-    </div>
+   
   );
 }
 
