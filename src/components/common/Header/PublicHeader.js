@@ -5,7 +5,7 @@ import Vector from "../../../assets/Vector.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import PublicSidenav from "./PublicSidenav";
-
+import main_logo from '../../../assets/home/main_logo.svg'
 function Header() {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
           <div className="line"></div>
           <div className="line"></div>
         </div>
-      <img onClick={() => navigate("/")} src={Logo} />
+      <img onClick={() => navigate("/")} src={main_logo} />
       <div className="navlink">
         <div className="dropdown">
           <a>About</a>

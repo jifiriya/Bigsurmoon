@@ -38,7 +38,7 @@ function Congigurator() {
         
       </div>
        <div className="upload">
-        <div>
+        <div className="upload-img">
           <img src={upload} />
           <h2 className="upload blue-text">1.Upload</h2>
           <p>
@@ -102,10 +102,10 @@ function Congigurator() {
               publish whenever you choose.
             </p>
           </div>
-          <img src={Presentation}/>
+          <img src={Presentation}  className="globe-img"/>
         </div>
         <div className="detailss">
-          <img src={Globe}/>
+          <img src={Globe} className="globe-img"/>
           <div>
             <span>No code, No App All through your Browser</span>
             <p>
