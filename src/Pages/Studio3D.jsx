@@ -7,10 +7,10 @@ import temp1 from "../assets/3DStudio/temp1.png";
 import temp2 from "../assets/3DStudio/temp2.png";
 import temp3 from "../assets/3DStudio/temp3.png";
 import Vector from "../assets/Vector.png";
-import tableLamp from '../assets/3DStudio/tableLamp.svg';
+import tableLamp from '../assets/3DStudio/Reference.gif';
 import Light from '../assets/home/Light.png';
 import writingpad from '../assets/3DStudio/writingpad.png';
-import upload from '../assets/3DStudio/upload.png'
+import upload from '../assets/3DStudio/cloud.png'
 import StudioSlider from "../components/common/reusable/3DStudioSlider";
 
 
@@ -18,13 +18,15 @@ function Studio3D() {
   return (
     <div className="studio">
       <div className="studio-main">
-        <div>
+        <div >
+         
           <span>3D Modelling</span>
           <br />
           <img src={Logo2} />
           <span> Solutions</span>
           <br />
           <span className="blue-text">Delivered!</span>
+         
           <Button>Get in Touch</Button>
         </div>
         <img src={sofa} />
@@ -143,10 +145,10 @@ function Studio3D() {
                 dimensions. That’s it,  from your end.
               </p>
             </div>
-            <img src={tableLamp} />
+            <img src={tableLamp} className="table-lamb"/>
           </div>
           <div className="steps-details">
-            <img src={Light} />
+            <img src={Light}  className="guide-light"/>
             <div>
               <h2>Step 2: 3D Model Creation</h2>
               <p>

@@ -12,6 +12,7 @@ import monitor from '../assets/monitor.svg';
 import temp2 from '../assets/3DStudio/temp2.png'
 import Globe from '../assets/Configurator/Globe.png'
 import Presentation from '../assets/Configurator/Presentation.png'
+import BookADemo from "./BookADemo";
 
 function Congigurator() {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ function Congigurator() {
       </div>
        <div className="upload">
         <div className="upload-img">
-          <img src={upload} />
+          <img src={upload} className="upload-img"/>
           <h2 className="upload blue-text">1.Upload</h2>
           <p>
             Seamlessly upload files and assets for integration into your
@@ -118,8 +119,15 @@ function Congigurator() {
         </div>
       </div>
       <div className="contact-us">
+        <div className="ccontact">
         <span>Contact us form</span>
+       
+        </div>
+         
+        <BookADemo />
+       
       </div> 
+     
     </div>
   );
 }

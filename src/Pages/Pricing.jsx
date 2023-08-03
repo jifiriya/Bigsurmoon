@@ -6,7 +6,7 @@ import Tick from "../assets/icons/Tick";
 
 
 function Pricing() {
-  const [value, setValue] = useState(50);
+  const [value, setValue] = useState();
 
   const handleChange = ({ max }) => {
     setValue(max);
@@ -26,7 +26,7 @@ function Pricing() {
         <div className="left">
           <h2>How Many 3D files Do You Have?</h2>
           <span>{value}</span>
-          <div></div>
+          <div className="line"></div>
           <CustomSlider
             className="filterpopup-range singleRange"
             min={0}
@@ -41,9 +41,9 @@ function Pricing() {
             <p>per month</p>
           </div>
           <div className="line-heading">
-            <div className="line"></div>
+            <div className="line-1"></div>
             <div>All Plans Include</div>
-            <div className="line"></div>
+            <div className="line-1"></div>
           </div>
 
           <div className="details">

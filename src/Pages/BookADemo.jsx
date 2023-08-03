@@ -12,7 +12,7 @@ const BookADemo = () => {
     };
   }, []);
   return (
-    <div >
+    <div>
       <div
         id="SOIDIV_Bigsurmoon"
         data-so-page="Bigsurmoon"
@@ -21,8 +21,6 @@ const BookADemo = () => {
         data-psz="11"
       />
     </div>
-
-
   );
 };
 

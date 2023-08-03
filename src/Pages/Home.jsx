@@ -2,7 +2,6 @@ import React from "react";
 import Switch from "../assets/home/AR Capsule.svg";
 import Button from "../components/common/reusable/Button";
 import Section2 from "../assets/home/Section2.png";
-import temp from "../assets/home/temp.png";
 import support from "../assets/home/Features/support.svg";
 import solutions from "../assets/home/Features/solutions.svg";
 import settings from "../assets/home/Features/settings.svg";
@@ -77,7 +76,7 @@ function Home() {
                 200% <br />
               </span>
               <span>
-                more <br />
+                More <br />
                 engagement
               </span>
             </p>
@@ -118,7 +117,7 @@ function Home() {
       </div>
       <div className="guide">
         <div className="guide-points">
-          <img src={Light} />
+          <img src={Light} className="guide-light"/>
           <div>
             <h2>3D Modelling Studio</h2>
             <p>

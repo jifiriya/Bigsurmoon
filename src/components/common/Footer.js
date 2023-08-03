@@ -8,7 +8,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-header">
         <div>
-          <img className="main-view" src={Logo} alt="Logo" />
+          <img className="main-view-1" src={main_logo} alt="Logo" />
         </div>
         <div>
           <UpButton  className="footer-upbutton"/>
@@ -22,8 +22,8 @@ function Footer() {
             Ernakulam, India <br /> Pin - 683565
           </div>
           <div className="contact">
-            <p>(+91) 7995-925304</p>
-            <p>support@bigsurmoon.com</p>
+            <p className="custom-text" style={{width: "130px"}}>(+91) 7995-925304</p>
+            <p  className="custom-text">support@bigsurmoon.com</p>
           </div>
         </div>
         <div className="footer-link">
@@ -72,6 +72,7 @@ function Footer() {
        
       </div>
     </div>
+    
   );
 }
 
