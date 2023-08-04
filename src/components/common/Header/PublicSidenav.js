@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function PublicSidenav({showMenu, closeSidenav }) {
   return (
-    <section className={`sidebar-wrap ${showMenu ? "show" : "hide"}`}>
+    <section className={`sidebar-wrap public ${showMenu ? "show" : "hide"}`}>
       <div className="back-drop" onClick={closeSidenav}></div>
       <div className="sidenav">
         <Link to='/'>Home</Link>

@@ -6,7 +6,7 @@ import Button from "../reusable/Button";
 
 function SideNav({ showMenu, closeSidenav }) {
   return (
-    <section className={`sidebar-wrap ${showMenu ? "show" : "hide"}`}>
+    <aside className={`sidebar-wrap private ${showMenu ? "show" : "hide"}`}>
       <div className="back-drop" onClick={closeSidenav}></div>
       <div className="sidenav">
         <Link to='/user-dashboard'>Dashboard</Link>
@@ -24,7 +24,7 @@ function SideNav({ showMenu, closeSidenav }) {
           <Button className="view-plans-button">View Plans</Button>
         </div>
       </div>
-    </section>
+    </aside>
   );
 }
 
