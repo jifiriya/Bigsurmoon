@@ -85,7 +85,7 @@ function UserDashBoard() {
             </div>
           </div>
           <div>
-          <span>Projects</span>
+          <span className="project">Projects</span>
           <div className="table-data">
             
             <div>
@@ -204,7 +204,7 @@ function UserDashBoard() {
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>name</td>
+                  <td className="name">name</td>
 
                   <td>
                     <div className="action">

@@ -199,6 +199,7 @@
   color: white;
   display: flex;
   min-height: 100vh;
+  height: 100%;
   
   // position:relative;
   // justify-content: center;
@@ -249,7 +250,7 @@
   }
 
 }
-.dashboard span{
+.dashboard .project{
   font-size: 20px;
   font-family: "Outfit";
   font-weight: 100;
@@ -357,6 +358,10 @@
   .small-table-data td {
     padding-left: 30px;
   }
+  .name{
+    max-width: 150px;
+    overflow: scroll;
+  }
 
   .small-table-data tr{
    width: 300px;
@@ -401,10 +406,15 @@
       display: flex;
       width: 330px;
       padding: 10px;
+      justify-content: space-around;
     }
 
     .small-table-data td {
-      padding-left: 30px;
+      
+     padding-right: 30px;
+    //  display: flex;
+    //  flex-wrap: wrap;
+    //  justify-content: space-;
     }
 }
 
@@ -414,40 +424,44 @@
 .action {
    display: flex;
    align-items: center;
-   padding-left: 150px;
+  //  padding-left: 130px;
 
-   svg {
-     margin-right: 23px;
+  //  svg {
+  //    margin-right: 23px;
 
-     path {
-       stroke: #898989;
-     }
-   }
+  //    path {
+  //      stroke: #898989;
+  //    }
+  //  }
 
    span {
      width: 4px;
    }
  }
 
- // dropdown
+ 
+
 .three-dots {
-   @include flex;
-   flex-direction: column;
-   border: none;
-   background-color: inherit;
- 
-   span {
-     background-color: white;
-     width: 4px;
-     height: 4px;
-     border-radius: 50%;
-     margin-bottom: 3px;
- 
-     &:last-child {
-       margin-bottom: 0;
-     }
-   }
- }
+  align-self: flex-end;
+  display: flex; 
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  
+  
+  span {
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 3px;
+    
+    &:last-child {
+      margin-right: 0; 
+    }
+  }
+}
+
  .action{
 
  .dropdown {
@@ -546,7 +560,6 @@
    }
  }
 }
-
 
 
 
