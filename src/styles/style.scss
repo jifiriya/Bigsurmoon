@@ -84,6 +84,7 @@ body {
   color: #292929;
   @media screen and (max-width: 999px) {
     justify-content: space-around;
+    height: 65px;
   
   }
   img {
@@ -256,8 +257,12 @@ body {
   }
   @media screen and (max-width: 768px) {
     font-size: 10px;
-    height: 300px;
+    height: auto;
     padding: 20px;
+    justify-content: initial;
+  }
+  @media screen and (max-width: 390px) {
+    flex-wrap: nowrap;
   }
  
 }
@@ -293,14 +298,11 @@ svg{
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 9999;
-  // align-items: center;
-  // max-width: 1280px;
   width: 1100px;
-  
-  // height: 200px;
 
   @media screen and (max-width: 1100px) {
     max-width: 1000px;
+    
   }
   
   
@@ -313,6 +315,7 @@ svg{
    gap: 110px;
     align-items: center;
     height: 100px;
+    // padding-bottom: 100px;
 
 
   }
@@ -355,6 +358,9 @@ svg{
     gap: 0px;
   
   }
+  @media screen and (max-width: 390px) {
+    flex-wrap: nowrap;
+  }
 }
 .footer-link {
       display: flex;
@@ -375,6 +381,7 @@ svg{
       color: #9b9b9b;
       @media screen and (max-width: 788px) {
         margin-left: -100px;
+        margin-top: 30px
       }
     }
   
@@ -408,6 +415,10 @@ svg{
   position: relative;
   padding-bottom: 100px;
   padding-top: 100px;
+  @media screen and (max-width: 787px) {
+    background-image: url("../assets//home/home-backgrund2.png");
+    padding-bottom: 50px;
+  }
 
   
   
@@ -420,8 +431,9 @@ svg{
     max-height: 100vh;
     flex-wrap: wrap;
     line-height: 1.7;
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 786px) {
       margin-bottom: 100px;
+      padding-top: 0px;
     }
    
 
@@ -432,6 +444,7 @@ svg{
       justify-content: center;
       align-content: center;
       p {
+        width: 800px;
         margin:20px;
         margin-bottom: 50px;
         text-align: center;
@@ -439,7 +452,10 @@ svg{
         font-size: 100px;
         font-weight: 600;
         line-height: 1;
-
+         br {
+          display: none;
+        }
+        
         img {
           margin-bottom: -30px;
           height: 110px;
@@ -466,6 +482,7 @@ svg{
         p {
           font-size: 80px;
           font-weight: 600;
+          width: 700px;
           img {
             height: 100px;
             font-size: 50px;
@@ -478,11 +495,13 @@ svg{
      
       @media screen and (max-width: 767px) {
         // height: 200px;
+       
         
         p {
           
           max-width: 350px;
-          font-size: 50px;
+          
+          font-size: 56px;
           line-height: 1.5;
           // margin: 10px;
           font-weight: 600;
@@ -496,7 +515,7 @@ svg{
           }
         }
         p br {
-          display: none;
+          display: block;
         }
       }
     }
@@ -508,7 +527,8 @@ svg{
         margin-top: -20px;
         font-family: "Roboto";
         @media screen and (max-width: 768px) {
-          font-size: 12px;
+          font-size: 14px;
+          line-height: 1.4;
         }
       }
     }
@@ -543,7 +563,7 @@ svg{
       max-width: 60%;
       // height: auto;
       @media screen and (max-width: 768px) {
-        max-width: 80%;
+        max-width: 100%;
       }
     }
   }
@@ -556,7 +576,7 @@ svg{
     flex-direction: column;
     // min-height: 100vh;
     @media screen and (max-width: 768px) {
-      height: 70vh;
+      // height: 70vh;
     }
     .headings {
       font-size: 80px;
@@ -639,6 +659,7 @@ svg{
     @media screen and (max-width: 1199px) {
       span{
         margin-bottom: 50px;
+        letter-spacing: 5px;
       }
     }
     @media screen and (max-width: 768px) {
@@ -688,7 +709,7 @@ svg{
         max-width: 511px;
         // height: 150px;
         @media screen and (max-width: 1199px) {
-          max-width: 411px;
+          max-width: 350px;
         }
 
         h2 {
@@ -878,7 +899,7 @@ svg{
         display: block;
         background-color: #292929;
         border-radius: 50px;
-        padding: 30px;
+        padding: 20px;
       }
       .slider-component {
         display: flex;
@@ -888,10 +909,12 @@ svg{
         justify-content: center;
         font-family: "Outfit";
         h2 {
+          margin: 0;
           font-size: 18px;
         }
         p {
-          font-size: 15px;
+          font-size: 14px;
+          font-family: 100;
         }
         img {
           display: inherit;
@@ -918,6 +941,10 @@ svg{
   max-width: 100%;
   font-family: "Outfit";
   padding-top: 50px;
+  @media screen and (max-width: 770px) {
+    background-image: url("../assets/3DStudio//mobileBG.png");
+    background-size: 100%;;
+  }
 
   .studio-main {
     
@@ -935,6 +962,8 @@ svg{
       text-align: center;
       gap: 0px;
       margin-top: 50px;
+      min-height: auto;
+      margin-bottom: 50px;
     }
 
     div {
@@ -1027,8 +1056,8 @@ svg{
       letter-spacing: 0.01cm;
       @media screen and (max-width: 770px) {
         font-size: 16px;
-        font-weight: 50;
-        line-height: 2;
+        font-weight: 100;
+        line-height: 1.7;
       }
     }
   }
@@ -1046,7 +1075,7 @@ svg{
       font-size: 25px;
       font-weight: bold;
       letter-spacing: 10px;
-      margin-bottom: 200px;
+      margin-bottom: 150px;
       @media screen and (max-width: 1000px) {
         font-size: 20px;
         margin-bottom: 50px;
@@ -1059,6 +1088,8 @@ svg{
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
+      
+     
 
       @media screen and (max-width: 1150px) {
         flex-grow: 1;
@@ -1070,13 +1101,86 @@ svg{
         }
       }
 
-      div {
-        width: 295px;
-        height: 348px;
+      .component-elements {
+        width: 265px;
+        height: 328px;
         background-color: #292929;
         border-radius: 10%;
         text-align: center;
-        img {
+        margin-top: 50px;
+         .image-container{
+            margin-top: -50px;
+            // height: 100px;
+          }
+          .img-1 {
+            position: relative;
+            top: -40px;
+            left: 40px;
+            width: 121px;
+           
+          }
+  
+          .img-m{
+            width: 100px;
+      
+          }
+        
+          .img-2 {
+           
+            width: 170px;
+            margin-top: -150px; /* Adjust the margin as needed */
+          }
+        // .image-container{
+        //   margin-top: -25px;
+        //   // height: 100px;
+        // }
+        // .img-1 {
+        //   position: relative;
+        //   top: -50px;
+        //   left: 90px;
+        //   width: 121px;
+         
+        // }
+
+        // .img-m{
+        //   width: 100px;
+    
+        // }
+      
+        // .img-2 {
+        //   margin-left: -90px;
+        //   width: 171px;
+        //   margin-top: -150px; /* Adjust the margin as needed */
+        // }
+
+        @media screen and (max-width: 1280px) {
+          width: 260px;
+          height: 320px;
+          // .image-container{
+          //   margin-top: -50px;
+          //   // height: 100px;
+          // }
+          // .img-1 {
+          //   position: relative;
+          //   top: -40px;
+          //   left: 40px;
+          //   width: 121px;
+           
+          // }
+  
+          // .img-m{
+          //   width: 100px;
+      
+          // }
+        
+          // .img-2 {
+          //   margin-left: 0px;
+          //   width: 170px;
+          //   margin-top: -150px; /* Adjust the margin as needed */
+          // }
+        }
+      
+        .image-studio {
           width: 171px;
           height: 204px;
           margin-top: -100px;
@@ -1090,8 +1194,11 @@ svg{
           padding: 20px;
           font-weight: 100;
         }
+       
       }
     }
+   
+   
     .studio-slider {
       display: none;
     }
@@ -1101,27 +1208,36 @@ svg{
       }
       .studio-slider {
         display: block;
+        // padding: 20px;
+        border-radius: 50px;
 
-        div {
+        .slider {
           justify-content: center;
           align-items: center;
-
+          align-content: center;
+         display: flex;
+          flex-direction: column;
           background-color: #292929;
           border-radius: 10%;
           text-align: center;
         }
         h2 {
           font-size: 20px;
+          margin: 0;
         }
         p {
           font-size: 16px;
           padding: 20px;
+          margin: 0px;
         }
         img {
-          height: 150px;
-          padding-top: -200px;
+          margin: 0px;
+          display: initial;
+          height: 100px;
+          padding-top: 20px;
         }
       }
+     
     }
   }
   .studio-details {
@@ -1168,19 +1284,21 @@ svg{
         flex-direction: column;
         gap: 0px;
         margin: 0;
+        
         img {
           order: -1;
           width: auto;
           height: 180px;
         }
         div {
-          margin: 20px;
+          // margin: 20px;
+          padding: 20px 50px 50px;
         }
         h2{
-          font-size: 34px;
+          font-size: 25px;
         }
         p{
-          font-size: 15px;
+          font-size: 14px;
         }
       }
 
@@ -1210,9 +1328,16 @@ svg{
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 10px;
+        @media screen and (max-width: 788px) {
+          font-size: 20px;
+        }
       }
       p {
         font-size: 18px;
+        @media screen and (max-width: 788px) {
+          font-size: 14px;
+          width: 346px
+        }
       }
     }
     .steps {
@@ -1222,7 +1347,7 @@ svg{
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 200px;
-        padding: 50px;
+        padding: 40px;
         
         @media screen and (max-width: 788px) {
           // padding: 20px;
@@ -1243,14 +1368,14 @@ svg{
             font-size: 44px;
             font-weight: 600;
             @media screen and (max-width: 788px) {
-              font-size: 25px;
+              font-size: 20px;
             }
           }
           p {
             font-size: 22px;
             line-height: 1.3;
             @media screen and (max-width: 788px) {
-              font-size: 15px;
+              font-size: 14px;
             }
           }
         }
@@ -1270,10 +1395,13 @@ svg{
           @media screen and (max-width: 1199px) {
             width: 250px;
             height: auto;
+
           }
         }
         .table-lamb{
           border-radius: 10px;
+          width: 220px;
+          height: auto;
         }
       }
     }
@@ -1363,17 +1491,29 @@ svg{
     height: 123px;
     padding: 30px;
     padding-bottom: 200px;
+    @media screen and (max-width: 868px) {
+      padding: 10px;
+      padding-bottom: 200px;
+    }
 
     h2 {
       font-size: 48px;
       font-weight: bold;
       font-family: "Outfit";
       letter-spacing: 2px;
+      @media screen and (max-width: 868px) {
+        font-size: 38px;
+      }
     }
     p {
       font-size: 18px;
       font-weight: 100;
       line-height: 1.3;
+      @media screen and (max-width: 868px) {
+        font-size: 14px;
+        max-width: 350px;
+        letter-spacing: 0.5px;
+      }
     }
   }
   .pricing-componenet {
@@ -1564,6 +1704,10 @@ svg{
   align-content: center;
   width: 100%;
   padding-bottom: 100px;
+  @media screen and (max-width: 768px) {
+    background-image: url("../assets/about-ar/bgmobile.png");
+    background-size: 100%;
+  }
   .ar-top {
     display: flex;
     gap: 100px;
@@ -1705,9 +1849,16 @@ svg{
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+  @media screen and (max-width: 868px) {
+    background-image: url("../assets//3DStudio//mobileBG.png");
+    background-size: 100%;
+  }
 
   div {
     margin-bottom: 50px;
+    @media screen and (max-width: 868px) {
+      margin-bottom: 20px;
+    }
    
   }
 
@@ -2461,7 +2612,7 @@ select:focus ~ .bar:after {
       margin-top: 0px;
       font-family: "Outfit";
       @media screen and (max-width: 768px) {
-        font-size: 25px;
+        font-size: 36px;
       }
     }
     p {
@@ -2491,7 +2642,7 @@ select:focus ~ .bar:after {
       margin: 0;
       width: 120px;
       height: 35px;
-      font-size: 8px;
+      font-size: 10px;
       font-weight: 100;
       
       .vector{

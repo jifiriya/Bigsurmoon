@@ -12,6 +12,11 @@ import Light from '../assets/home/Light.png';
 import writingpad from '../assets/3DStudio/writingpad.png';
 import upload from '../assets/3DStudio/cloud.png'
 import StudioSlider from "../components/common/reusable/3DStudioSlider";
+import temp6 from '../assets/3DStudio/temp (6).png'
+import attentionToDetail from '../assets/3DStudio/AttentiontoDetails.png'
+import medal from '../assets/3DStudio/medal.png'
+import Technical from '../assets/3DStudio/TechnicalCompetancy.png'
+import Rectangle from '../assets/3DStudio/Rectangle 10.png'
 
 
 function Studio3D() {
@@ -50,32 +55,41 @@ function Studio3D() {
           <h1>WHAT’S SPECIAL ABOUT US</h1>
         </div>
         <div className="components">
-          <div>
-            <img src={Symbol} />
+          <div className="component-elements">
+            <img src={Symbol} className="image-studio" />
             <h2>Highly Optimised</h2>
             <p>
               With years of experience, we provide highly optimized files for
               fast loading and seamless user experience
             </p>
           </div>
-          <div>
-            <img src={Symbol} />
+          <div className="component-elements">
+           <div className="image-container">
+            <img src={attentionToDetail} className="img-1" />
+            <img src={Rectangle} className="img-2" />
+           </div>
             <h2>Attention to Detail</h2>
             <p>
               We study your product like it was made from beginning. Each detail
               your product has is represented exactly
             </p>
           </div>
-          <div>
-            <img src={Symbol} />
+          <div className="component-elements">
+          <div className="image-container">
+            <img src={medal} className="img-1 img-m" />
+            <img src={Rectangle} className="img-2 " />
+           </div>
             <h2>Quality, TAT & Delivery</h2>
             <p>
               Assured quality because of proficiency and experience and quick
               TAT assuring on-time delivery
             </p>
           </div>
-          <div>
-            <img src={Symbol} />
+          <div className="component-elements">
+          <div className="image-container">
+            <img src={Technical} className="img-1 img-t" />
+            <img src={Rectangle} className="img-2" />
+           </div>
             <h2>Technical Competency</h2>
             <p>
               Technically qualified team in various mfg. technologies, ensuring
@@ -109,7 +123,7 @@ function Studio3D() {
             </p>
           </div>
           
-            <img src={temp2} />
+            <img src={temp6} />
           
         </div>
         <div className="detail-component">

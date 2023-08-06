@@ -623,3 +623,41 @@
   }
 }
 
+
+// Slick-Slider
+.slick-dots {
+  // margin-top: 10px;
+  position: relative;
+}
+.slick-dots li{
+  margin: 0;
+
+}
+.slick-dots li button{
+ all: unset;
+    overflow: hidden;
+    display: block;
+    border: solid #fff 1px;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    text-indent: -9999px;
+    // margin: 0 1vw;
+
+  // width: 10px;
+  // height: 10px;
+  // content: "";
+  // border: 2px solid white;
+  // border-radius: 50%;
+}
+.slick-dots li.slick-active button{
+  margin-top: 0;
+  border-color: transparent;
+  background-image: linear-gradient(to right, #06BFFF, #2B74FF);
+  background-size: calc( 100% + 8px );
+  background-position: center center;
+}
+
+.slick-slide img {
+  display: flex;
+}

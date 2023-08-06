@@ -26,9 +26,8 @@ function Home() {
       <div className="home-top">
         <div className="home-heading">
           <p>
-            It's time to make {" "}
-            <br/>
-             the
+            It's time  <br/>
+             to make the
             <img src={Switch} />
             switch{" "}
           </p>
