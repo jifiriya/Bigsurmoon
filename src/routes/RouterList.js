@@ -13,6 +13,7 @@ import Congigurator from "../Pages/Congigurator";
 import BookADemo from "../Pages/BookADemo";
 import UserDashBoard from "../Pages/UserDashBoard";
 import AdminDashboard from "../Pages/AdminDashboard";
+import Page404 from '../components/common/ErrorPage404.js'
 
 function RouterList() {
   const modules = [
@@ -30,6 +31,7 @@ function RouterList() {
     <>
      
       <Routes>
+        <Route path="/error" element={<Page404 />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/user-dashboard' element={<UserDashBoard />} />

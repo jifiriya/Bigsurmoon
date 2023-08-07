@@ -7,11 +7,9 @@ import addnew from "../assets/dashboard/addnew.svg";
 import upload from "../assets/dashboard/upload.svg";
 import TableMenu from "../components/common/reusable/TableMenu";
 import SideNav from "../components/common/Header/SideNav";
-import noPicture from "../assets/no-picture.png";
 import ShareButton from "../components/common/ShareButton";
 import Edit from "../assets/icons/Edit.js";
 import AddNewPopUp from "../components/common/AddNewPopUp";
-
 
 function UserDashBoard() {
   const hiddenFileInput = React.useRef(null);
